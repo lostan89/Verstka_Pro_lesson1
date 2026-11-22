@@ -11,14 +11,15 @@
         cursor: pointer;
         background-color: transparent;
         width: 30px;
-        margin-right: 20px;
+        margin: 3px;
+        margin-bottom:8px;
       }
       .button-mute-fulscreen {
         cursor: pointer;
       }
      .button-fa {
       color: white;
-      font-size: 150%;
+      font-size: 148%;
      }  
   </style>
 </head>
@@ -31,11 +32,21 @@
       <button class="js-pause-button button-play-pause"><i class="fa fa-pause button-fa" aria-hidden="false"></i></button>
       <button class="js-volume-button button-play-pause"><i class="fa fa-volume-off button-fa" aria-hidden="true"></i></button>
       <button class="js-mute-button button-mute-fulscreen button-play-pause" hidden><i class="fa fa-volume-up button-fa" aria-hidden="true"></i></button>
+      <div style="color: white; flex-grow: 1; ">
+      <span class="js-current-time"></span>
+      —
+      <span class="js-duration"></span>
+      </div>
       <div style= "flex-grow: 1;"></div>
       <button class="js-fullscreen-button button-mute-fulscreen button-play-pause"><i class="fa fa-arrows-alt button-fa" aria-hidden="true"></i></button>
     </div>
+ <!--    <div style="color: white; flex-grow: 1; ">
+      <span class="js-current-time"></span>
+      —
+     <span class="js-duration"></span>
+    </div>  -->
   </div>
-
+         
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="player.js"></script>
